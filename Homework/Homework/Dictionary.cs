@@ -10,8 +10,8 @@ namespace Homework
     {
         public void TaskLoop()
         {
-            while (true) { 
-            Dictionary<string, double> students = new Dictionary<string, double>();
+            
+                Dictionary<string, double> students = new Dictionary<string, double>();
 
                 while (true)
                 {
@@ -50,8 +50,8 @@ namespace Homework
                         Console.WriteLine($"Студент с именем {searchName} не найден.");
                     }
 
-                    Console.WriteLine("\nВведите \"–exit\" для выхода.");
-                    if (Console.ReadLine() == "–exit")
+                    Console.WriteLine("\nВведите \"exit\" для выхода.");
+                    if (Console.ReadLine() == "exit")
                     {
                         break;
                     }
@@ -59,4 +59,3 @@ namespace Homework
             }
         }
     }
-}
